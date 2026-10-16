@@ -169,7 +169,7 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 32px;
+            gap: 28px;
             list-style: none;
         }
 
@@ -296,6 +296,7 @@
         .mobile-menu.active a:nth-child(5) { transition-delay: 0.3s; }
         .mobile-menu.active a:nth-child(6) { transition-delay: 0.35s; }
         .mobile-menu.active a:nth-child(7) { transition-delay: 0.4s; }
+        .mobile-menu.active a:nth-child(8) { transition-delay: 0.45s; }
 
         /* HERO */
         .hero {
@@ -1467,6 +1468,33 @@
             font-size: 1.3rem;
         }
 
+        .btn-affiliate {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--blue-secondary), var(--blue-primary));
+            color: var(--white);
+            padding: 18px 36px;
+            border-radius: 14px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .btn-affiliate:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(43, 95, 138, 0.3);
+            background: linear-gradient(135deg, var(--blue-primary), var(--dark-blue));
+        }
+
         /* FOOTER */
         .footer {
             background: var(--dark);
@@ -1756,7 +1784,7 @@
                 flex-direction: column;
             }
 
-            .btn-primary, .btn-secondary {
+            .btn-primary, .btn-secondary, .btn-affiliate {
                 width: 100%;
                 justify-content: center;
             }
@@ -1830,7 +1858,7 @@
             <li><a href="#eventos">Eventos</a></li>
             <li><a href="#lecheria">Lechería</a></li>
             <li><a href="#recursos">Recursos</a></li>
-            <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+            <li><a href="https://forms.cloud.microsoft/r/qDn4w0hanA" target="_blank" class="nav-cta">Afíliate</a></li>
         </ul>
         <div class="hamburger" id="hamburger">
             <span></span>
@@ -1848,7 +1876,7 @@
         <a href="#eventos" onclick="closeMobile()">Eventos</a>
         <a href="#lecheria" onclick="closeMobile()">Lechería</a>
         <a href="#recursos" onclick="closeMobile()">Recursos</a>
-        <a href="#contacto" onclick="closeMobile()">Contacto</a>
+        <a href="https://forms.cloud.microsoft/r/qDn4w0hanA" target="_blank" onclick="closeMobile()" style="color: var(--orange-primary); font-weight: 700;">Afíliate ahora</a>
     </div>
 
     <!-- HERO -->
@@ -1874,8 +1902,8 @@
                 Conectamos empresarios, protegemos intereses y construimos el futuro económico de nuestra región.
             </p>
             <div class="hero-buttons">
-                <a href="#contacto" class="btn-primary">
-                    <i class="fas fa-handshake"></i> Únete a la Cámara
+                <a href="https://forms.cloud.microsoft/r/qDn4w0hanA" target="_blank" class="btn-primary">
+                    <i class="fas fa-file-signature"></i> Afíliate ahora
                 </a>
                 <a href="#nosotros" class="btn-secondary">
                     <i class="fas fa-play-circle"></i> Conoce más
@@ -1990,8 +2018,8 @@
                 Muy pronto publicaremos un catálogo de beneficios, descuentos y oportunidades exclusivas 
                 disponibles solo para los miembros activos de CACOINNATUR.
             </p>
-            <a href="#contacto" class="btn-primary">
-                <i class="fas fa-bell"></i> Quiero ser el primero en saberlo
+            <a href="https://forms.cloud.microsoft/r/qDn4w0hanA" target="_blank" class="btn-primary">
+                <i class="fas fa-bell"></i> Afíliate y sé el primero en acceder
             </a>
         </div>
     </section>
@@ -2198,6 +2226,10 @@
                         Enviar por WhatsApp
                     </button>
                 </form>
+                
+                <a href="https://forms.cloud.microsoft/r/qDn4w0hanA" target="_blank" class="btn-affiliate">
+                    <i class="fas fa-user-plus"></i> Ir al Formulario Oficial de Afiliación
+                </a>
             </div>
         </div>
     </section>
@@ -2230,12 +2262,12 @@
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Afiliación</h4>
+                <h4>Afiliación y Contacto</h4>
                 <ul>
+                    <li><a href="https://forms.cloud.microsoft/r/qDn4w0hanA" target="_blank">Formulario de Afiliación</a></li>
                     <li><a href="https://fedecamarasanz.github.io/fanz/" target="_blank">Fedecámaras Anzoátegui</a></li>
                     <li><a href="http://wa.me/+584248390575" target="_blank">WhatsApp</a></li>
                     <li><a href="https://www.instagram.com/camaracomerciolecheria/" target="_blank">Instagram</a></li>
-                    <li><a href="mailto:cacoinnatur@outlook.com">Email</a></li>
                 </ul>
             </div>
         </div>
